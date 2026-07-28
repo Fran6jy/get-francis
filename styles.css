@@ -249,6 +249,17 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 }
 .tl h3{font-size:1.18rem;font-weight:500;margin-bottom:.7rem}
 .tl p{color:var(--ink-2);font-size:.94rem;line-height:1.7}
+.certs{list-style:none;margin:1.15rem 0 0;padding:0;display:grid;gap:0}
+.certs li{
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:.5rem 1rem;padding:.62rem 0;border-bottom:1px solid var(--line);
+}
+.certs li:first-child{border-top:1px solid var(--line)}
+.certs span{font-size:.88rem;color:var(--ink);line-height:1.45}
+.certs i{
+  font-family:var(--mono);font-style:normal;font-size:.66rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap;
+}
 .skills{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .skills__group{background:var(--surface);padding:1.5rem 1.6rem}
 .skills__group h4{

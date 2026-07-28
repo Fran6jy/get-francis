@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Francis · Francis Babatunde</title>
+<meta name="description" content="Francis Babatunde. Data scientist and systems engineer. MSc Data Science. Builds production ML platforms, native desktop software, and agentic AI products across Python, Rust, C++, C# and TypeScript.">
+<meta name="author" content="Francis Babatunde">
+<meta property="og:title" content="Get Francis · Francis Babatunde">
+<meta property="og:description" content="Data scientist and systems engineer. Ships production ML platforms, native desktop software, and agentic AI products.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif'>F</text></svg>">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <span class="nav__mark">F</span>
+    <span class="nav__name">Get Francis</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#craft">Craft</a>
+    <a href="#background">Background</a>
+    <a href="#contact" class="nav__cta">Get in touch</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow reveal">Francis Babatunde &middot; Wolverhampton, United Kingdom</p>
+      <h1 class="hero__title reveal">
+        I build the <em>unglamorous</em> parts<br>
+        that make products actually work.
+      </h1>
+      <p class="hero__lede reveal">
+        Senior data engineer with an MSc in Data Science and five years turning messy operational
+        data into reporting people can trust. I work at both ends of the stack: pipelines,
+        validation frameworks, forecasting and LLM retrieval on one side, hardware video encoders,
+        encrypted peer to peer transports and native Windows apps on the other. Roughly two dozen
+        repositories across Python, Rust, C++, C# and TypeScript, most of them real software rather
+        than tutorials.
+      </p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--primary" href="#work">See the work</a>
+        <a class="btn btn--ghost" href="#contact">Get Francis</a>
+      </div>
+      <ul class="hero__stats reveal">
+        <li><strong>5</strong><span>production languages</span></li>
+        <li><strong>24</strong><span>repositories</span></li>
+        <li><strong>MSc</strong><span>Data Science</span></li>
+        <li><strong>5+</strong><span>years in data</span></li>
+      </ul>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Python</span><i>&bull;</i><span>Rust</span><i>&bull;</i><span>C++23</span><i>&bull;</i><span>C# / .NET</span><i>&bull;</i><span>TypeScript</span><i>&bull;</i><span>SQL</span><i>&bull;</i><span>Next.js</span><i>&bull;</i><span>PyTorch</span><i>&bull;</i><span>DuckDB</span><i>&bull;</i><span>Postgres</span><i>&bull;</i><span>FFmpeg</span><i>&bull;</i><span>Docker</span><i>&bull;</i><span>Airflow</span><i>&bull;</i><span>Power BI</span><i>&bull;</i>
+      <span>Python</span><i>&bull;</i><span>Rust</span><i>&bull;</i><span>C++23</span><i>&bull;</i><span>C# / .NET</span><i>&bull;</i><span>TypeScript</span><i>&bull;</i><span>SQL</span><i>&bull;</i><span>Next.js</span><i>&bull;</i><span>PyTorch</span><i>&bull;</i><span>DuckDB</span><i>&bull;</i><span>Postgres</span><i>&bull;</i><span>FFmpeg</span><i>&bull;</i><span>Docker</span><i>&bull;</i><span>Airflow</span><i>&bull;</i><span>Power BI</span><i>&bull;</i>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section__head reveal">
+      <p class="eyebrow">01 &middot; Selected work</p>
+      <h2>Things I have built and shipped.</h2>
+      <p class="section__lede">
+        A mix of public repositories and private products. Filter by the kind of problem
+        rather than the language, because the language is usually the easy part.
+      </p>
+    </div>
+
+    <div class="filters reveal" role="tablist" aria-label="Filter projects">
+      <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="chip" data-filter="data" role="tab" aria-selected="false">Data &amp; ML</button>
+      <button class="chip" data-filter="ai" role="tab" aria-selected="false">Agentic AI</button>
+      <button class="chip" data-filter="systems" role="tab" aria-selected="false">Systems</button>
+      <button class="chip" data-filter="product" role="tab" aria-selected="false">Product &amp; web</button>
+    </div>
+
+    <div class="grid" id="projectGrid"></div>
+  </section>
+
+  <!-- CRAFT -->
+  <section class="section section--alt" id="craft">
+    <div class="section__head reveal">
+      <p class="eyebrow">02 &middot; How I work</p>
+      <h2>Opinions, held loosely, applied consistently.</h2>
+    </div>
+    <div class="craft">
+      <article class="craft__item reveal">
+        <span class="craft__num">01</span>
+        <h3>Ship the boring reliability first</h3>
+        <p>
+          Fragmented MP4 so an interrupted recording still plays. Append-only audit trails so a
+          correction never destroys history. Offline fallbacks so a missing API key degrades the
+          product instead of breaking it. Demos are cheap, recovery paths are not.
+        </p>
+      </article>
+      <article class="craft__item reveal">
+        <span class="craft__num">02</span>
+        <h3>A model without a metric is a vibe</h3>
+        <p>
+          My chess imitation network reports move-match accuracy on held out games, the way the
+          Maia papers measure it. An earlier language-model version looked impressive and played
+          illegal moves, so it was deleted. Measurable beats interesting.
+        </p>
+      </article>
+      <article class="craft__item reveal">
+        <span class="craft__num">03</span>
+        <h3>Deterministic where you can, LLM where you must</h3>
+        <p>
+          In LodgeOS, categorisation is a rule engine with no model in the loop, and the LLM only
+          handles genuine ambiguity behind a provider fallback chain. Cheaper, faster, and it
+          gives you something you can actually regression test.
+        </p>
+      </article>
+      <article class="craft__item reveal">
+        <span class="craft__num">04</span>
+        <h3>Go down a layer when the layer is the problem</h3>
+        <p>
+          Zero-copy DXGI to NVENC because a memory round trip is the frame budget. Hand rolled
+          Noise plus ChaCha20 datagrams because a generic tunnel adds latency you cannot afford.
+          Abstractions are a default, not a rule.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section class="section" id="background">
+    <div class="section__head reveal">
+      <p class="eyebrow">03 &middot; Background</p>
+      <h2>Data first, systems second, both now.</h2>
+    </div>
+
+    <div class="split">
+      <div class="timeline">
+        <article class="tl reveal">
+          <p class="tl__when">Sep 2022 to present &middot; SwapMoney Ltd, Birmingham</p>
+          <h3>Senior Data Engineer, reporting and data quality</h3>
+          <p>
+            Analysis and validation of multi source transactional data, turning complex records
+            into accurate reporting datasets. Built structured analytical models and Power BI ready
+            datasets behind consistent KPIs, and introduced automated validation checks that
+            compare source records against transformed outputs and published reports. Much of the
+            work is root cause investigation: finding why a number is wrong, not just that it is.
+          </p>
+        </article>
+        <article class="tl reveal">
+          <p class="tl__when">Oct 2019 to Aug 2022 &middot; Contract and remote consulting</p>
+          <h3>Data engineering and analytics consultant</h3>
+          <p>
+            Delivered pipelines, validation activities and reporting products across multiple client
+            environments. Reviewed dashboards against agreed requirements, checking calculation
+            accuracy, KPI definitions and data quality, and built recurring Power BI, Excel and
+            Python reporting for survey and operational data.
+          </p>
+        </article>
+        <article class="tl reveal">
+          <p class="tl__when">Jan 2019 to Oct 2019 &middot; Ministry of Information, Kano, Nigeria</p>
+          <h3>Data analyst, statistical reporting</h3>
+          <p>
+            Collected, cleaned and validated operational datasets from multiple systems and public
+            sources, ran exploratory and statistical analysis to surface trends and anomalies, and
+            produced monthly reporting for non technical decision makers.
+          </p>
+        </article>
+        <article class="tl reveal">
+          <p class="tl__when">Education</p>
+          <h3>MSc Data Science, Coventry University</h3>
+          <p>
+            2022 to 2023, following a BSc in Information and Communication Science at the University
+            of Ilorin. Formal grounding in statistics, machine learning and experimental design,
+            which is why the forecasting work leans on Prophet, XGBoost and LightGBM with held out
+            evaluation rather than on a single model and a hopeful chart.
+          </p>
+        </article>
+        <article class="tl reveal">
+          <p class="tl__when">Certifications</p>
+          <h3>IBM Data Engineering Professional Certificate</h3>
+          <p>
+            Including the capstone project, plus IBM Machine Learning with Apache Spark, Databases
+            and SQL for Data Science with Python, and Python for Data Science, AI and Development.
+            Member of Data Science Nigeria.
+          </p>
+        </article>
+      </div>
+
+      <aside class="skills">
+        <div class="skills__group reveal">
+          <h4>Data and ML</h4>
+          <p>SQL, Python, pandas, scikit-learn, PyTorch, Prophet, XGBoost, LightGBM, ETL and ELT design, dimensional modelling, data quality and validation frameworks, DuckDB, Postgres, Snowflake, Azure data platform patterns, Spark, medallion architecture, Airflow, Kafka ingestion, Power BI, SSRS, Streamlit</p>
+        </div>
+        <div class="skills__group reveal">
+          <h4>AI systems</h4>
+          <p>RAG and natural language to SQL, multi agent orchestration, LangChain, Anthropic and OpenAI and OpenRouter fallback chains, local inference, Whisper and faster-whisper, ONNX in the browser, vision model pipelines</p>
+        </div>
+        <div class="skills__group reveal">
+          <h4>Systems and native</h4>
+          <p>Rust, C++23, C# and .NET 8, Qt 6, WPF, Tauri, FFmpeg, NVENC and Quick Sync and AMF, DXGI and Windows Graphics Capture, WASAPI, D3D11VA, STUN and NAT hole punching, Noise and ChaCha20-Poly1305</p>
+        </div>
+        <div class="skills__group reveal">
+          <h4>Product and web</h4>
+          <p>TypeScript, Next.js App Router, React, Tailwind, Prisma, Supabase, Redis and BullMQ, Better Auth, Docker, nginx, Vercel, self hosted VPS deployment</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="contact reveal">
+      <p class="eyebrow">04 &middot; Availability</p>
+      <h2 class="contact__title">Get Francis.</h2>
+      <p class="contact__lede">
+        Open to senior data engineering, data science, machine learning engineering and applied AI
+        roles, plus selected consulting on analytics platforms and native or real time systems.
+        Based in Wolverhampton and working across the UK and remotely. If you have a problem that
+        sits awkwardly between data and engineering, that is usually the one I want.
+      </p>
+      <div class="contact__links">
+        <a class="btn btn--primary" href="mailto:Fran6jy@outlook.com">Fran6jy@outlook.com</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/fran6jy/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn--ghost" href="https://github.com/Fran6jy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Francis Babatunde</p>
+  <p class="footer__note">Built by hand. No framework, no build step.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

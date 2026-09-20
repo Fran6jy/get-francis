@@ -53,6 +53,25 @@ const PROJECTS = [
     ]
   },
   {
+    title: "Biometric Warehouse, dbt",
+    kind: "Analytics engineering",
+    role: "Data engineering",
+    cat: ["data"],
+    badge: "Public",
+    body: "A dbt Core analytics layer over a GDPR conscious biometric verification pipeline. The original proof of concept specified a Snowflake star schema and shipped an empty schema file, so this is that warehouse built for real.",
+    points: [
+      "Two staging models and one mart at date by region grain, targeting both Snowflake and DuckDB",
+      "57 tests covering types, uniqueness, referential integrity and the single analytics eligibility rule",
+      "Consent filtering as a modelled rule: 72 of 500 readings excluded and the exclusion is auditable",
+      "Generated documentation with the full lineage graph published on GitHub Pages"
+    ],
+    tags: ["dbt Core", "Snowflake", "DuckDB", "SQL", "GitHub Pages"],
+    links: [
+      { label: "Repository", href: "https://github.com/Fran6jy/biometric-warehouse-dbt" },
+      { label: "Docs and lineage", href: "https://fran6jy.github.io/biometric-warehouse-dbt/" }
+    ]
+  },
+  {
     title: "LodgeOS",
     kind: "Natural language finance engine",
     role: "AI systems",
@@ -67,22 +86,6 @@ const PROJECTS = [
     ],
     tags: ["Python", "FastAPI", "SQLite", "faster-whisper", "Vision models", "Telegram"],
     links: []
-  },
-  {
-    title: "Kẹ́lẹ́kẹ́lẹ́",
-    kind: "Desktop AI assistant",
-    role: "Windows / .NET",
-    cat: ["systems", "ai"],
-    badge: "Private",
-    body: "A real time interview copilot for Windows with a translucent overlay that is excluded from screen capture, so it never appears in a shared screen or a recording.",
-    points: [
-      "Capture exclusion through the Win32 SetWindowDisplayAffinity API, toggleable at runtime",
-      "WASAPI loopback capture with voice activity detection, so whole utterances are transcribed and silence is skipped",
-      "Cloud or fully offline transcription, with token by token streamed answers rendered as live markdown",
-      "Offline machine bound signed licensing and a self contained single file installer"
-    ],
-    tags: ["C#", ".NET 8", "WPF", "Whisper", "WASAPI", "Inno Setup"],
-    links: [{ label: "Landing page", href: "https://kelekele.vercel.app" }]
   },
   {
     title: "FootballStox",
@@ -122,13 +125,13 @@ const PROJECTS = [
   },
   {
     title: "Awosanmo",
-    kind: "Self hosted platform",
+    kind: "Self hosted media platform",
     role: "Full stack",
     cat: ["product", "systems"],
     badge: "Deployed",
-    body: "A private cloud torrenting and streaming platform, tuned to run on a 1 vCPU and 1 GB free tier box. Paste a magnet link and stream the file before the download finishes.",
+    body: "A private, self hosted media download and streaming platform, tuned to run on a 1 vCPU and 1 GB free tier box. Add a file or link and stream it from anywhere before the transfer finishes.",
     points: [
-      "Sequential downloading with HTTP range requests, so video starts playing early and seeks fast",
+      "Sequential transfer with HTTP range requests, so video starts playing early and seeks fast",
       "Siloed multi user accounts with rotating refresh sessions, revocation and optional TOTP two factor",
       "Full file manager: folders, drag and drop, bulk delete, ZIP download, previews and an in browser EPUB reader",
       "Running on an Oracle Ubuntu VM behind nginx and a Cloudflare tunnel"
@@ -169,19 +172,49 @@ const PROJECTS = [
     links: [{ label: "Repository", href: "https://github.com/Fran6jy/subunited" }]
   },
   {
-    title: "NatureLogue",
-    kind: "Commerce experience",
-    role: "Front end / design",
+    title: "NatureLogue, for CHAI Origins",
+    kind: "Founder and commerce build",
+    role: "Co-founder / full stack",
     cat: ["product"],
-    badge: "Private",
-    body: "An illustrated field journal of botanicals where education and commerce are interwoven, so you read why a flower matters and the blend is sitting right there in the story.",
+    badge: "Live",
+    body: "The storefront and field journal for CHAI Origins, a premium heritage botanical drinks brand I co-founded through Naturelogue Ltd. Education and commerce are interwoven, so you read why a flower matters and the blend is sitting right there in the story.",
     points: [
-      "The homepage is an emotional arc rather than a product grid: arrive, wander, understand, belong",
-      "Page background shifts temperature as you scroll between the two worlds",
-      "An interactive passport map for one flower with many names: sorrel, zobo, bissap, karkadé, agua de Jamaica",
-      "All copy and catalogue data kept in plain TypeScript content files, editable without touching components"
+      "Two collections and four blends built on 21 named botanicals, including a doum palm chai base new to the market",
+      "Stripe checkout, inventory and order database, moderated reviews and a lightweight CMS",
+      "Signature motif, one flower with many homes: sorrel, zobo, bissap, karkadé, agua de Jamaica, as an interactive map",
+      "Page temperature shifts as you scroll between the two collections, a feature rather than an inconsistency"
     ],
-    tags: ["Next.js", "Tailwind v4", "Framer Motion", "TypeScript"],
+    tags: ["Next.js", "Stripe", "Postgres", "Tailwind v4", "Framer Motion"],
+    links: [{ label: "Live site", href: "https://naturelogue.vercel.app" }]
+  },
+  {
+    title: "Liz Ikamba",
+    kind: "Client website",
+    role: "Front end / migration",
+    cat: ["product"],
+    badge: "Live",
+    body: "A real client site for an Afro soul folk singer and multi instrumentalist, migrated from WordPress to a static Astro build. Hosting cost went from roughly 120 pounds a year to the price of the domain.",
+    points: [
+      "A migration, not a redesign: same content, same URLs, same embeds, same visual identity",
+      "Replaced Genesis, Elementor, Fluent Forms and WooCommerce with static files on a free tier",
+      "Content manager and forms set up so the owner can edit without touching code"
+    ],
+    tags: ["Astro", "TypeScript", "Static hosting"],
+    links: [{ label: "Live site", href: "https://lizikamba.com" }]
+  },
+  {
+    title: "SupportGram",
+    kind: "Care operations platform",
+    role: "Full stack / AI",
+    cat: ["ai", "product"],
+    badge: "Private",
+    body: "Support workers write messy notes. Agencies get clean care records. A mobile first app for quick shift notes, AI cleanup into a structured visit record, and a manager dashboard for review, search, export and compliance.",
+    points: [
+      "A rushed one line note on a phone becomes a typed record: client, time, personal care, medication, family contact, incidents, mileage",
+      "Worker reviews before submitting, manager reviews after, so the AI never has the final word",
+      "Built around the worker's reality, tired and typing on a phone, rather than around manager forms"
+    ],
+    tags: ["TypeScript", "Next.js", "Postgres", "LLM"],
     links: []
   },
   {
